@@ -5,7 +5,7 @@ import React from 'react'
 
 export default function Home() {
   return (
-    <div className="bg-main pt-5">
+    <>
       <Head>
         <title>UU-PlatHome | 宇大生必須のプラットフォーム</title>
         <link rel="icon" href="/favicon.ico" />
@@ -21,22 +21,35 @@ export default function Home() {
         ` }} />
       </Head>
 
-      <header className="w-full">
-        <div className="flex wrapper">
+      <header className="w-full pt-5 bg-main-bg" style={{height: 80}}>
+        <div className="flex wrapper justify-between items-center" style={{height: 60}}>
           <h1>
-            <img src='./Logo_black.svg' width='250' height='44.4' alt='UU-PlatHome'/>
+            <img src='./Logo_black.svg' width='250' alt='UU-PlatHome'/>
           </h1>
-          <p className='mplus-medium text-4xl tracking-widest text-ora'>“UU-PlatHome”とは？</p>
+          <nav className='text-sm mr-5 flex gap-7'>
+            <a href='#about'>ABOUT</a>
+            <a href='#service'>SERVICE</a>
+            <a href='#news'>NEWS</a>
+            <a href='/contact'>CONTACT</a>
+          </nav>
         </div>
       </header>
 
       <main>
+        <div className='mainvisual bg-main-bg mb-10' style={{height: 700}}>
 
+        </div>
+
+        <section id="about" className="w-full">
+          <div className='inner-wrap'>
+
+          </div>
+        </section>
       </main>
 
       <footer>
 
       </footer>
-    </div>
+    </>
   )
 }

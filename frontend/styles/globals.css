@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply mplus-light tracking-wider;
+    @apply mplus-light bg-main tracking-wider;
   }
 }
 
@@ -13,33 +13,39 @@
     margin: 0 auto;
     max-width: 1200px;
   }
-}
-.mplus-light {
-  font-family: 'm-plus-2p', sans-serif;
-  font-weight: 300;
-}
 
-.mplus-regular {
-  font-family: 'm-plus-2p', sans-serif;
-  font-weight: 400;
-}
+  .inner-wrap {
+    margin: 0 auto;
+    max-width: 1000px;
+  }
 
-.mplus-medium {
-  font-family: 'm-plus-2p', sans-serif;
-  font-weight: 500;
-}
+  .mplus-light {
+    font-family: 'm-plus-2p', sans-serif;
+    font-weight: 300;
+  }
 
-.mplus-bold {
-  font-family: 'm-plus-2p', sans-serif;
-  font-weight: 700;
-}
+  .mplus-regular {
+    font-family: 'm-plus-2p', sans-serif;
+    font-weight: 400;
+  }
 
-.mplus-heavy {
-  font-family: 'm-plus-2p', sans-serif;
-  font-weight: 800;
-}
+  .mplus-medium {
+    font-family: 'm-plus-2p', sans-serif;
+    font-weight: 500;
+  }
 
-.mplus-black {
-  font-family: 'm-plus-2p', sans-serif;
-  font-weight: 900;
+  .mplus-bold {
+    font-family: 'm-plus-2p', sans-serif;
+    font-weight: 700;
+  }
+
+  .mplus-heavy {
+    font-family: 'm-plus-2p', sans-serif;
+    font-weight: 800;
+  }
+
+  .mplus-black {
+    font-family: 'm-plus-2p', sans-serif;
+    font-weight: 900;
+  }
 }

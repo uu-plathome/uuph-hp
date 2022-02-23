@@ -95,27 +95,27 @@
     background-color: #94dbff;
     z-index: -1;
   }
-}
 
-.linkbox {
-  display: inline-block;
-  position: relative;
-  margin: 0 auto;
-  padding: 8px;
-  width: 240px;
-  text-align: center;
-  font-size: 0.875rem;
-  font-weight: 500;
-  background-color: #f9fdff;
-  z-index: 10;
-}
+  .linkbox {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    padding: 8px;
+    width: 240px;
+    text-align: center;
+    font-size: 0.875rem;
+    font-weight: 500;
+    background-color: #f9fdff;
+    z-index: 10;
+  }
 
-.linkbox::after {
-  content: '';
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  border-width: 0px 0px 12px 12px;
-  border-style: solid;
-  border-color: #e8feff #35c1ff #e8feff;
+  .linkbox::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-width: 0px 0px 12px 12px;
+    border-style: solid;
+    border-color: #e8feff #35c1ff #e8feff;
+  }
 }

@@ -22,10 +22,12 @@ export default function Home() {
         ` }} />
       </Head>
 
-      <header className="w-full pt-5 bg-main-bg" style={{ height: 80 }}>
+      <header className="w-full pt-5 fixed z-50" style={{ height: 80 }}>
         <div className="flex wrapper justify-between items-center" style={{ height: 60 }}>
           <h1>
-            <Image src='/Logo_black.svg' width='250' height='60' alt='UU-PlatHome' />
+            <a href='https://uu-plathome.com'>
+              <Image src='/Logo_black.svg' width='250' height='60' alt='UU-PlatHome' />
+            </a>
           </h1>
           <nav className='text-sm mr-5 flex gap-7'>
             <a href='#about'>ABOUT</a>
@@ -37,7 +39,7 @@ export default function Home() {
       </header>
 
       <main>
-        <div className='mainvisual bg-main-bg mb-10' style={{ height: 700 }}>
+        <div className='mainvisual bg-main-bg pt-20 mb-10' style={{ height: 780 }}>
 
         </div>
 

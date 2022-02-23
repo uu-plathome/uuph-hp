@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply mplus-light overflow-x-hidden bg-main tracking-wider;
+    @apply mplus-light overflow-x-hidden bg-main tracking-wider text-fb;
   }
 
   h2 {
@@ -13,6 +13,10 @@
 
   h2 span {
     @apply mplus-medium mt-0 block text-sm tracking-widest;
+  }
+
+  h3 {
+    @apply mplus-medium text-lg;
   }
 }
 
@@ -76,4 +80,42 @@
     background-color: #f9fdff;
     z-index: -1;
   }
+
+  .line_blue {
+    position: relative;
+  }
+
+  .line_blue::after {
+    content: '';
+    position: absolute;
+    width: calc(100% + 40px);
+    left: -16px;
+    top: 10px;
+    height: 1rem;
+    background-color: #94dbff;
+    z-index: -1;
+  }
+}
+
+.linkbox {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto;
+  padding: 8px;
+  width: 240px;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 500;
+  background-color: #f9fdff;
+  z-index: 10;
+}
+
+.linkbox::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-width: 0px 0px 12px 12px;
+  border-style: solid;
+  border-color: #e8feff #35c1ff #e8feff;
 }

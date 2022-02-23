@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <Head>
         <title>UU-PlatHome | 宇大生必須のプラットフォーム</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
         <script dangerouslySetInnerHTML={{ __html: `
           (function(d) {
           var config = {
@@ -24,7 +24,7 @@ export default function Home() {
       <header className="w-full pt-5 bg-main-bg" style={{height: 80}}>
         <div className="flex wrapper justify-between items-center" style={{height: 60}}>
           <h1>
-            <img src='./Logo_black.svg' width='250' alt='UU-PlatHome'/>
+            <Image src='/Logo_black.svg' width='250' height='60' alt='UU-PlatHome'/>
           </h1>
           <nav className='text-sm mr-5 flex gap-7'>
             <a href='#about'>ABOUT</a>
@@ -40,9 +40,26 @@ export default function Home() {
 
         </div>
 
-        <section id="about" className="w-full">
-          <div className='inner-wrap'>
-
+        <section id="about" className="w-full mb-28">
+          <div className='inner-content relative' style={{height: 500}}>
+            <div className='w-screen bg-main-b4 absolute' style={{zIndex: -1, height: 500}}>
+              <div className=""  style={{maxWidth: 800, marginLeft: 100, height: 500}}>
+                <h2 className='mb-60'>
+                  ABOUT<br /><span>“UU-PlatHome”とは？</span>
+                </h2>
+                <p className='leading-8'>UU-PlatHomeは、<br /><span className='line mplus-medium'>宇都宮大学生必須のWebサービス “UU-Circles”</span><br /><span className='line mplus-medium'>メディアサイト “uu-yell”</span><br />を運営するメディア団体です。</p>
+              </div>
+            </div>
+            <div className='absolute top-16 left-96' style={{}}>
+              <Image src='/about_boy.png' width='250' height='250' alt='' />
+            </div>
+            <div className='absolute top-28 left-64' style={{}}>
+              <Image src='/about_girl.png' width='250' height='250' alt='' />
+            </div>
+            <div className='flex gap-5 absolute top-1/2 right-0' style={{transform: 'translateY(-50%)'}}>
+              <Image src='/UUCircles_iPhone.png' width='160' height='308.55' alt='UU-Circles' />
+              <Image src='/uuyell_iPhone.png' width='160' height='308.55' alt='uu-yell' />
+            </div>
           </div>
         </section>
       </main>

@@ -4,7 +4,15 @@
 
 @layer base {
   body {
-    @apply mplus-light bg-main tracking-wider;
+    @apply mplus-light overflow-x-hidden bg-main tracking-wider;
+  }
+
+  h2 {
+    @apply mplus-heavy mt-10 text-4xl tracking-widest text-ora;
+  }
+
+  h2 span {
+    @apply mplus-medium mt-0 block text-sm tracking-widest;
   }
 }
 
@@ -15,6 +23,11 @@
   }
 
   .inner-wrap {
+    margin: 0 auto;
+    max-width: 800px;
+  }
+
+  .inner-content {
     margin: 0 auto;
     max-width: 1000px;
   }
@@ -47,5 +60,20 @@
   .mplus-black {
     font-family: 'm-plus-2p', sans-serif;
     font-weight: 900;
+  }
+
+  .line {
+    position: relative;
+  }
+
+  .line::after {
+    content: '';
+    position: absolute;
+    width: calc(100% + 24px);
+    left: -10px;
+    top: 4px;
+    height: 1.2rem;
+    background-color: #f9fdff;
+    z-index: -1;
   }
 }

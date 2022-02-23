@@ -26,7 +26,7 @@ export default function Home() {
         <div className="flex wrapper justify-between items-center" style={{ height: 60 }}>
           <h1>
             <a href='https://uu-plathome.com'>
-              <Image src='/Logo_black.svg' width='250' height='60' alt='UU-PlatHome' />
+              <Image src='/Logo_black.svg' width='220' height='39' alt='UU-PlatHome' />
             </a>
           </h1>
           <nav className='text-sm mr-5 flex gap-7'>

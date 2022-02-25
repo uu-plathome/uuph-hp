@@ -29,6 +29,9 @@ module.exports = {
         ora: {
           DEFAULT: '#ED7039',
         },
+        ulab: {
+          DEFAULT: '#5FB1BD',
+        },
       },
     },
   },

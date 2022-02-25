@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply mplus-light overflow-x-hidden bg-main-bg tracking-wider text-fb;
+    @apply mplus-light overflow-x-hidden bg-main tracking-wider text-fb;
   }
 
   h2 {

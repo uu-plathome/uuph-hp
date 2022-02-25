@@ -39,7 +39,7 @@ export default function Home() {
       </header>
 
       <main>
-        <div className='mainvisual bg-main-bg pt-20 mb-10' style={{ height: 780 }}>
+        <div className='mainvisual pt-20 mb-10' style={{ height: 780 }}>
           mainvisual
         </div>
 
@@ -128,7 +128,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className='w-full bg-main-bg' style={{ height: 300 }}>
+      <footer className='w-full' style={{ height: 300 }}>
         footer
       </footer>
     </>

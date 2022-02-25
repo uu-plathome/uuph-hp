@@ -32,7 +32,7 @@ export default function Home() {
           <nav className='text-sm mr-5 flex gap-7'>
             <a href='#about'>ABOUT</a>
             <a href='#service'>SERVICE</a>
-            <a href='#news'>NEWS</a>
+            {/*<a href='#news'>NEWS</a>*/}
             <a href='/contact'>CONTACT</a>
           </nav>
         </div>
@@ -40,7 +40,7 @@ export default function Home() {
 
       <main>
         <div className='mainvisual bg-main-bg pt-20 mb-10' style={{ height: 780 }}>
-
+          mainvisual
         </div>
 
         <section id="about" className="w-full mb-28">
@@ -110,6 +110,10 @@ export default function Home() {
           </div>
         </section>
 
+        {/*<section id='news'>
+          news
+        </section>*/}
+
         <section id='u-lab' className='mb-28'>
           <div className='text-center py-10 inner-content rounded-3xl border-4 border-ulab'>
             <h2 className='mplus-medium text-lg text-fb mt-0 mb-7'>サイト制作について</h2>
@@ -125,7 +129,7 @@ export default function Home() {
       </main>
 
       <footer className='w-full bg-main-bg' style={{ height: 300 }}>
-
+        footer
       </footer>
     </>
   )

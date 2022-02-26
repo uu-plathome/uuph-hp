@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import { Header } from '../components/header'
+import { Footer } from '../components/footer'
 
 
 const Home = () => {
@@ -11,26 +13,10 @@ const Home = () => {
         <title>UU-PlatHome | 宇大生必須のプラットフォーム</title>
       </Head>
 
-      <header className="w-full pt-5 fixed z-50" style={{ height: 80 }}>
-        <div className="flex wrapper justify-between items-center" style={{ height: 60 }}>
-          <h1>
-            <a href='https://uu-plathome.com'>
-              <Image src='/Logo_black.svg' width='220' height='39' alt='UU-PlatHome' />
-            </a>
-          </h1>
-          <nav className='text-sm mr-5 flex gap-7'>
-            <a href='#about'>ABOUT</a>
-            <a href='#service'>SERVICE</a>
-            {/*<a href='#news'>NEWS</a>*/}
-            <Link href='/contact'>
-              <a>CONTACT</a>
-            </Link>
-          </nav>
-        </div>
-      </header>
+      <Header />
 
       <main>
-        <div className='mainvisual pt-20 mb-10' style={{ height: 780 }}>
+        <div className='mainvisual bg-main-bg pt-20 mb-10' style={{ height: 780 }}>
           mainvisual
         </div>
 
@@ -119,9 +105,7 @@ const Home = () => {
         </section>
       </main>
 
-      <footer className='w-full' style={{ height: 300 }}>
-        footer
-      </footer>
+      <Footer />
     </>
   )
 }

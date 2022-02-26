@@ -1,36 +1,26 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
+import { Header } from '../../components/header'
+import { Footer } from '../../components/footer'
 
 
 export default function Home() {
   return (
-    <div className="bg-main pt-5">
+    <>
       <Head>
         <title>Contact | UU-PlatHome</title>
       </Head>
 
-      <header className="w-full">
-        <div className="flex wrapper">
-          <h1>
-            <img src='./Logo_black.svg' width='250' alt='UU-PlatHome' />
-          </h1>
-          <nav>
-            <a href='#about'>ABOUT</a>
-            <a href='#service'>SERVICE</a>
-            <a href='#news'>NEWS</a>
-            <a href='/contact'>CONTACT</a>
-          </nav>
-        </div>
-      </header>
+      <Header />
 
-      <main>
-        <p>コンタクトページ</p>
+      <main className='text-center pt-32'>
+        <h2 className='mb-16'>CONTACT<br /><span>お問い合わせ</span></h2>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScUDn6XHyVHkfQG481VrfcsYPpy_TfYa7CwExBpMEV0T0moTA/viewform?embedded=true" width="640" height="1720" className='mx-auto mb-28'>読み込んでいます…</iframe>
       </main>
 
-      <footer>
-
-      </footer>
-    </div>
+      <Footer />
+    </>
   )
 }

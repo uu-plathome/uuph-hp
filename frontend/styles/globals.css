@@ -1,3 +1,121 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply mplus-light overflow-x-hidden bg-main-bg tracking-wider text-fb;
+  }
+
+  h2 {
+    @apply mplus-heavy mt-10 text-4xl tracking-widest text-ora;
+  }
+
+  h2 span {
+    @apply mplus-medium mt-0 block text-sm tracking-widest;
+  }
+
+  h3 {
+    @apply mplus-medium text-lg;
+  }
+}
+
+@layer utilities {
+  .wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+
+  .inner-wrap {
+    margin: 0 auto;
+    max-width: 800px;
+  }
+
+  .inner-content {
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+
+  .mplus-light {
+    font-family: 'm-plus-2p', sans-serif;
+    font-weight: 300;
+  }
+
+  .mplus-regular {
+    font-family: 'm-plus-2p', sans-serif;
+    font-weight: 400;
+  }
+
+  .mplus-medium {
+    font-family: 'm-plus-2p', sans-serif;
+    font-weight: 500;
+  }
+
+  .mplus-bold {
+    font-family: 'm-plus-2p', sans-serif;
+    font-weight: 700;
+  }
+
+  .mplus-heavy {
+    font-family: 'm-plus-2p', sans-serif;
+    font-weight: 800;
+  }
+
+  .mplus-black {
+    font-family: 'm-plus-2p', sans-serif;
+    font-weight: 900;
+  }
+
+  .line {
+    position: relative;
+  }
+
+  .line::after {
+    content: '';
+    position: absolute;
+    width: calc(100% + 24px);
+    left: -10px;
+    top: 4px;
+    height: 1.2rem;
+    background-color: #f9fdff;
+    z-index: -1;
+  }
+
+  .line_blue {
+    position: relative;
+  }
+
+  .line_blue::after {
+    content: '';
+    position: absolute;
+    width: calc(100% + 40px);
+    left: -16px;
+    top: 10px;
+    height: 1rem;
+    background-color: #94dbff;
+    z-index: -1;
+  }
+
+  .linkbox {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    padding: 8px;
+    width: 240px;
+    text-align: center;
+    font-size: 0.875rem;
+    font-weight: 500;
+    background-color: #f9fdff;
+    z-index: 10;
+  }
+
+  .linkbox::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-width: 0px 0px 12px 12px;
+    border-style: solid;
+    border-color: #e8feff #35c1ff #e8feff;
+  }
+}

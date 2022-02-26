@@ -1,82 +1,136 @@
 import Head from 'next/head'
+import Image from 'next/image'
+import Link from 'next/link'
+import React from 'react'
+
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
+    <>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>UU-PlatHome | 宇大生必須のプラットフォーム</title>
+        <link rel="icon" href="/favicon.png" />
+        <script dangerouslySetInnerHTML={{
+          __html: `
+          (function(d) {
+          var config={
+            kitId: 'uos7nye' ,
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+"wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded" )return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)})(document);
+        ` }} />
       </Head>
 
-      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
-
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="rounded-md bg-gray-100 p-3 font-mono text-lg">
-            pages/index.tsx
-          </code>
-        </p>
-
-        <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+      <header className="w-full pt-5 fixed z-50" style={{ height: 80 }}>
+        <div className="flex wrapper justify-between items-center" style={{ height: 60 }}>
+          <h1>
+            <a href='https://uu-plathome.com'>
+              <Image src='/Logo_black.svg' width='220' height='39' alt='UU-PlatHome' />
+            </a>
+          </h1>
+          <nav className='text-sm mr-5 flex gap-7'>
+            <a href='#about'>ABOUT</a>
+            <a href='#service'>SERVICE</a>
+            {/*<a href='#news'>NEWS</a>*/}
+            <a href='/contact'>CONTACT</a>
+          </nav>
         </div>
+      </header>
+
+      <main>
+        <div className='mainvisual pt-20 mb-10' style={{ height: 780 }}>
+          mainvisual
+        </div>
+
+        <section id="about" className="w-full mb-28">
+          <div className='inner-content relative' style={{ height: 510 }}>
+            <div className='w-screen bg-main-b4 absolute' style={{ zIndex: 0, height: 510 }}>
+              <div className="" style={{ maxWidth: 800, marginLeft: 100, height: 510 }}>
+                <h2 className='mb-60'>
+                  ABOUT<br /><span>“UU-PlatHome”とは？</span>
+                </h2>
+                <p className='leading-8'>UU-PlatHomeは、<br /><span className='line mplus-medium'>宇都宮大学生必須のWebサービス
+                  “UU-Circles”</span><br /><span className='line mplus-medium'>メディアサイト “uu-yell”</span><br />を運営するメディア団体です。
+                </p>
+              </div>
+            </div>
+            <div className='absolute top-16 left-96' style={{}}>
+              <Image src='/about_boy.png' width='250' height='250' alt='' />
+            </div>
+            <div className='absolute top-28 left-64' style={{}}>
+              <Image src='/about_girl.png' width='250' height='250' alt='' />
+            </div>
+            <div className='flex gap-5 absolute top-1/2 right-0' style={{ transform: 'translateY(-50%)' }}>
+              <Image src='/UUCircles_iPhone.png' width='160' height='308.55' alt='UU-Circles' />
+              <Image src='/uuyell_iPhone.png' width='160' height='308.55' alt='uu-yell' />
+            </div>
+          </div>
+        </section>
+
+        <section id="service" className="w-full mb-28">
+          <div className='inner-content relative' style={{ height: 800 }}>
+            <div className='w-screen bg-main-b4 absolute right-0' style={{ zIndex: 0, height: 800 }}>
+              <div className="absolute right-0" style={{ width: 800, marginRight: 100, height: 800 }}>
+                <h2 className='mb-16 text-right'>
+                  SERVICE<br /><span>運営サービス</span>
+                </h2>
+
+                <div className='flex container justify-between mb-20'>
+                  <div className='' style={{ width: 460 }}>
+                    <h3 className='mb-3 line_blue inline-block'>UU-Circles</h3>
+                    <p className='text-sm leading-7 pl-8 mb-3'>「宇都宮大学の全てのサークルを知れる場所」を目標に運営を行っている Web サービス。</p>
+                    <p className='text-sm leading-7 pl-8 mb-4'>各サークルオリジナルの『ビラ』一覧 や
+                      毎日更新される『今日の新歓』、サークルが新歓の追加や情報を更新できる『サークル管理ページ』などの機能があります。</p>
+                    <div className='text-center'>
+                      <a href='https://uu-circles.com/' target='_blank' rel='noopener' className='linkbox'>UU-Circles</a>
+                    </div>
+                  </div>
+                  <div className='my-auto'>
+                    <Image src='/uucircles_thumbnail.png' width='300' height='156.27' />
+                  </div>
+                </div>
+
+                <div className='flex container justify-between'>
+                  <div className='my-auto'>
+                    <Image src='/uuyell_thumbnail.png' width='300' height='156.27' />
+                  </div>
+                  <div className='' style={{ width: 460 }}>
+                    <h3 className='mb-3 line_blue inline-block'>uu-yell</h3>
+                    <p className='text-sm leading-7 pl-8 mb-3'>宇都宮大学の学生活動を応援する<br />プラットフォーム型メディアサイト。</p>
+                    <p className='text-sm leading-7 pl-8 mb-4'>
+                      uu-mailのとなりにブックマークしてもらえるくらい必須ツールにしたいという目標から「uu-mailのとなりに、uu-yell。」をキャッチコピーとして掲げています。</p>
+                    <div className='text-center'>
+                      <a href='https://media.uu-circles.com/' target='_blank' rel='noopener' className='linkbox'>uu-yell</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/*<section id='news'>
+          news
+        </section>*/}
+
+        <section id='u-lab' className='mb-28'>
+          <div className='text-center py-10 inner-content rounded-3xl border-4 border-ulab'>
+            <h2 className='mplus-medium text-lg text-fb mt-0 mb-7'>サイト制作について</h2>
+            <p className='mb-1'>UU-Circles・uu-yellの開発は 学生団体U-lab が行いました！</p>
+            <div className='w-fit text-center m-auto'>
+              <a href='https:ulab-uu.com' target='_blank' rel='noopener' className='block mb-2'>
+                <Image src='/U-lab_uu.jpg' width='250' height='145' alt='U-lab' />
+                <p>U-lab HP</p>
+              </a>
+            </div>
+          </div>
+        </section>
       </main>
 
-      <footer className="flex h-24 w-full items-center justify-center border-t">
-        <a
-          className="flex items-center justify-center"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="ml-2 h-4" />
-        </a>
+      <footer className='w-full' style={{ height: 300 }}>
+        footer
       </footer>
-    </div>
+    </>
   )
 }

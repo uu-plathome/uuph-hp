@@ -117,7 +117,7 @@ export default function Home() {
         <section id='u-lab' className='mb-28'>
           <div className='text-center py-10 inner-content rounded-3xl border-4 border-ulab'>
             <h2 className='mplus-medium text-lg text-fb mt-0 mb-7'>サイト制作について</h2>
-            <p className='mb-1'>UU-Circles・uu-yellの開発は 学生団体U-lab が行いました！</p>
+            <p className='mb-8'>UU-Circles・uu-yellの開発は 学生団体U-lab が行いました！</p>
             <div className='w-fit text-center m-auto'>
               <a href='https://ulab-uu.com' target='_blank' rel='noopener' className='block mb-2'>
                 <Image src='/U-lab_uu.jpg' width='250' height='145' alt='U-lab' />

@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply mplus-light overflow-x-hidden bg-main-bg tracking-wider text-fb;
+    @apply mplus-light overflow-x-hidden bg-main tracking-wider text-fb;
   }
 
   h2 {
@@ -17,6 +17,10 @@
 
   h3 {
     @apply mplus-medium text-lg;
+  }
+
+  footer a {
+    @apply w-fit;
   }
 }
 

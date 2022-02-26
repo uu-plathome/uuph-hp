@@ -119,7 +119,7 @@ export default function Home() {
             <h2 className='mplus-medium text-lg text-fb mt-0 mb-7'>サイト制作について</h2>
             <p className='mb-1'>UU-Circles・uu-yellの開発は 学生団体U-lab が行いました！</p>
             <div className='w-fit text-center m-auto'>
-              <a href='https:ulab-uu.com' target='_blank' rel='noopener' className='block mb-2'>
+              <a href='https://ulab-uu.com' target='_blank' rel='noopener' className='block mb-2'>
                 <Image src='/U-lab_uu.jpg' width='250' height='145' alt='U-lab' />
                 <p>U-lab HP</p>
               </a>

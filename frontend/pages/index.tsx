@@ -4,22 +4,11 @@ import Link from 'next/link'
 import React from 'react'
 
 
-export default function Home() {
+const Home = () => {
   return (
     <>
       <Head>
         <title>UU-PlatHome | 宇大生必須のプラットフォーム</title>
-        <link rel="icon" href="/favicon.png" />
-        <script dangerouslySetInnerHTML={{
-          __html: `
-          (function(d) {
-          var config={
-            kitId: 'uos7nye' ,
-            scriptTimeout: 3000,
-            async: true
-          },
-          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+"wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded" )return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)})(document);
-        ` }} />
       </Head>
 
       <header className="w-full pt-5 fixed z-50" style={{ height: 80 }}>
@@ -33,7 +22,9 @@ export default function Home() {
             <a href='#about'>ABOUT</a>
             <a href='#service'>SERVICE</a>
             {/*<a href='#news'>NEWS</a>*/}
-            <a href='/contact'>CONTACT</a>
+            <Link href='/contact'>
+              <a>CONTACT</a>
+            </Link>
           </nav>
         </div>
       </header>
@@ -134,3 +125,5 @@ export default function Home() {
     </>
   )
 }
+
+export default Home

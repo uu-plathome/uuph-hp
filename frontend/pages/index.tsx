@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import { Header } from '../components/header'
+import { HomeHeader } from '../components/header'
 import { Footer } from '../components/footer'
 
 
@@ -13,7 +13,7 @@ const Home = () => {
         <title>UU-PlatHome | 宇大生必須のプラットフォーム</title>
       </Head>
 
-      <Header />
+      <HomeHeader />
 
       <main>
         <div className='mainvisual bg-main-bg pt-20 mb-10 text-center' style={{ height: 780 }}>

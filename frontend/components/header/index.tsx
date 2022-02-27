@@ -13,9 +13,9 @@ export function HomeHeader() {
           </a>
         </h1>
         <nav className='text-xs mr-5 flex gap-7'>
-          <Scroll smooth={true} to='about'>ABOUT</Scroll>
-          <Scroll smooth={true} to='service'>SERVICE</Scroll>
-          {/*<Scroll smooth={true} to='news'>NEWS</Scroll>*/}
+          <Scroll smooth={true} offset={-90} to='about'>ABOUT</Scroll>
+          <Scroll smooth={true} offset={-90} to='service'>SERVICE</Scroll>
+          {/*<Scroll smooth={true} offset={-90} to='news'>NEWS</Scroll>*/}
           <Link href='/contact'>
             <a>CONTACT</a>
           </Link>

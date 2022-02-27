@@ -23,6 +23,10 @@
     @apply align-top;
   }
 
+  section {
+    @apply mb-28 w-full;
+  }
+
   footer a {
     @apply w-fit;
   }
@@ -126,45 +130,76 @@
     border-style: solid;
     border-color: #e8feff #35c1ff #e8feff;
   }
+
+  .hover-circles,
+  .link-yell {
+    height: fit-content;
+  }
+
+  .hover-circles:hover::before,
+  .hover-yell:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0.3;
+    transition: 0.2s;
+    z-index: 2;
+  }
+
+  .hover-circles:hover::after {
+    content: 'UU-Circles';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #343838;
+    font-weight: 700;
+    transition: 0.2s;
+  }
+
+  .hover-yell:hover::after {
+    content: 'uu-yell';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #343838;
+    font-weight: 700;
+    transition: 0.2s;
+  }
 }
 
-.hover-circles,
-.link-yell {
-  height: fit-content;
+.mv-base {
+  margin: auto;
+  padding-top: 400px;
+  padding-bottom: 80px;
 }
 
-.hover-circles:hover::before,
-.hover-yell:hover::before {
-  content: '';
+.fv-children {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-  opacity: 0.3;
-  transition: 0.2s;
-  z-index: 2;
+  bottom: 190px;
+  left: 130px;
 }
 
-.hover-circles:hover::after {
-  content: 'UU-Circles';
+.fv-home {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  color: #343838;
+  bottom: 120px;
+  right: 100px;
+}
+
+.fv-content p {
+  position: absolute;
+  bottom: 100px;
+  left: 70px;
+  font-size: 1.25rem;
   font-weight: 700;
-  transition: 0.2s;
+  letter-spacing: 0.15rem;
 }
 
-.hover-yell:hover::after {
-  content: 'uu-yell';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  color: #343838;
-  font-weight: 700;
-  transition: 0.2s;
+header nav a {
+  cursor: pointer;
 }

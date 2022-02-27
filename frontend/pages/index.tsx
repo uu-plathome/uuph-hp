@@ -17,6 +17,7 @@ const Home = () => {
 
       <main>
         <div className='mainvisual bg-main-bg pt-20 mb-10' style={{ height: 780 }}>
+          {/*<Image src='/children.svg' width='300' height='300' alt='' />*/}
           mainvisual
         </div>
 
@@ -55,31 +56,33 @@ const Home = () => {
 
                 <div className='flex container justify-between mb-20'>
                   <div className='' style={{ width: 460 }}>
-                    <h3 className='mb-3 line_blue inline-block'>UU-Circles</h3>
+                    <h3 className='mb-3 px-3 pt-2 pb-1 border-2 border-uucircles leading-none inline-block'>
+                      <Image src='/UU-Circles.svg' width='110' height='22.92' alt='UU-Circles' />
+                    </h3>
                     <p className='text-sm leading-7 pl-8 mb-3'>「宇都宮大学の全てのサークルを知れる場所」を目標に運営を行っている Web サービス。</p>
                     <p className='text-sm leading-7 pl-8 mb-4'>各サークルオリジナルの『ビラ』一覧 や
                       毎日更新される『今日の新歓』、サークルが新歓の追加や情報を更新できる『サークル管理ページ』などの機能があります。</p>
-                    <div className='text-center'>
-                      <a href='https://uu-circles.com/' target='_blank' rel='noopener' className='linkbox'>UU-Circles</a>
-                    </div>
                   </div>
-                  <div className='my-auto'>
-                    <Image src='/uucircles_thumbnail.png' width='300' height='156.27' />
+                  <div className='my-auto hover-circles'>
+                    <a href='https://uu-circles.com/' target='_blank' rel='noopener' >
+                      <Image src='/uucircles_thumbnail.png' width='300' height='156.27' />
+                    </a>
                   </div>
                 </div>
 
                 <div className='flex container justify-between'>
-                  <div className='my-auto'>
-                    <Image src='/uuyell_thumbnail.png' width='300' height='156.27' />
+                  <div className='my-auto block hover-yell'>
+                    <a href='https://media.uu-circles.com/' target='_blank' rel='noopener'  >
+                      <Image src='/uuyell_thumbnail.png' width='300' height='156.27' />
+                    </a>
                   </div>
                   <div className='' style={{ width: 460 }}>
-                    <h3 className='mb-3 line_blue inline-block'>uu-yell</h3>
+                    <h3 className='mb-3 px-3 pt-2 pb-1 border-2 border-uuyell leading-none inline-block'>
+                      <Image src='/uu-yell.svg' width='76.48' height='22.92' alt='uu-yell' />
+                    </h3>
                     <p className='text-sm leading-7 pl-8 mb-3'>宇都宮大学の学生活動を応援する<br />プラットフォーム型メディアサイト。</p>
                     <p className='text-sm leading-7 pl-8 mb-4'>
                       uu-mailのとなりにブックマークしてもらえるくらい必須ツールにしたいという目標から「uu-mailのとなりに、uu-yell。」をキャッチコピーとして掲げています。</p>
-                    <div className='text-center'>
-                      <a href='https://media.uu-circles.com/' target='_blank' rel='noopener' className='linkbox'>uu-yell</a>
-                    </div>
                   </div>
                 </div>
               </div>

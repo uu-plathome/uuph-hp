@@ -32,6 +32,12 @@ module.exports = {
         ulab: {
           DEFAULT: '#5FB1BD',
         },
+        uucircles: {
+          DEFAULT: '#09CC40',
+        },
+        uuyell: {
+          DEFAULT: '#EF9018',
+        },
       },
     },
   },

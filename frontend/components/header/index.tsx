@@ -11,7 +11,7 @@ export function Header() {
             <Image src='/Logo_black.svg' width='220' height='39' alt='UU-PlatHome' />
           </a>
         </h1>
-        <nav className='text-sm mr-5 flex gap-7'>
+        <nav className='text-xs mr-5 flex gap-7'>
           <a href='/#about'>ABOUT</a>
           <a href='/#service'>SERVICE</a>
           {/*<a href='/#news'>NEWS</a>*/}

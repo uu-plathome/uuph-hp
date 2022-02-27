@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Link from 'next/link'
 import React from 'react'
 import { HomeHeader } from '../components/header'
 import { Footer } from '../components/footer'
@@ -16,14 +15,24 @@ const Home = () => {
       <HomeHeader />
 
       <main>
-        <div className='mainvisual bg-main-bg pt-20 mb-10 text-center' style={{ height: 780 }}>
-          <Image src='/children.svg' width='300' height='300' alt='' />
-          <Image src='/home.svg' width='600' height='500' alt='' />
-          <Image src='/bg.svg' width='800' height='128' alt='' />
-          mainvisual
+        <div className='bg-main-bg pt-20 mb-10'>
+          <div className='relative inner-content'>
+            <div className='mv-base' >
+              <Image src='/bg.svg' width='1000' height='160' alt='' />
+            </div>
+            <div className='fv-content'>
+              <div className='fv-children'>
+                <Image src='/children.svg' width='290' height='113' alt='' />
+              </div>
+              <div className='fv-home'>
+                <Image src='/home.svg' width='450' height='430' alt='' />
+              </div>
+              <p>宇大生必須のプラットフォーム</p>
+            </div>
+          </div>
         </div>
 
-        <section id="about" className="w-full mb-28">
+        <section id="about">
           <div className='inner-content relative' style={{ height: 510 }}>
             <div className='w-screen bg-main-b4 absolute' style={{ zIndex: 0, height: 510 }}>
               <div className="" style={{ maxWidth: 800, marginLeft: 100, height: 510 }}>
@@ -36,10 +45,10 @@ const Home = () => {
               </div>
             </div>
             <div className='absolute top-16 left-96' style={{}}>
-              <Image src='/about_boy.png' width='250' height='250' alt='' />
+              <Image src='/sub_girl_01.svg' width='250' height='250' alt='' />
             </div>
             <div className='absolute top-28 left-64' style={{}}>
-              <Image src='/about_girl.png' width='250' height='250' alt='' />
+              <Image src='/sub_boy_01.svg' width='250' height='250' alt='' />
             </div>
             <div className='flex gap-5 absolute top-1/2 right-0' style={{ transform: 'translateY(-50%)' }}>
               <Image src='/UUCircles_iPhone.png' width='160' height='308.55' alt='UU-Circles' />
@@ -48,7 +57,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section id="service" className="w-full mb-28">
+        <section id="service">
           <div className='inner-content relative' style={{ height: 800 }}>
             <div className='w-screen bg-main-b4 absolute right-0' style={{ zIndex: 0, height: 800 }}>
               <div className="absolute right-0" style={{ width: 800, marginRight: 100, height: 800 }}>
@@ -96,8 +105,8 @@ const Home = () => {
           news
         </section>*/}
 
-        <section id='u-lab' className='mb-28'>
-          <div className='text-center py-10 inner-content rounded-3xl border-4 border-ulab'>
+        <section id='u-lab'>
+          <div className='relative text-center py-10 inner-content rounded-3xl border-4 border-ulab'>
             <h2 className='mplus-medium text-lg text-fb mt-0 mb-7'>サイト制作について</h2>
             <p className='mb-8'>UU-Circles・uu-yellの開発は 学生団体U-lab が行いました！</p>
             <div className='w-fit text-center m-auto'>
@@ -105,6 +114,12 @@ const Home = () => {
                 <Image src='/U-lab_uu.jpg' width='250' height='145' alt='U-lab' />
                 <p>U-lab HP</p>
               </a>
+            </div>
+            <div className='absolute top-28'>
+              <Image src='/sub_boy_02.svg' width='200' height='200' alt='' />
+            </div>
+            <div className='absolute top-20 right-0'>
+              <Image src='/sub_girl_02.svg' width='250' height='250' alt='' />
             </div>
           </div>
         </section>

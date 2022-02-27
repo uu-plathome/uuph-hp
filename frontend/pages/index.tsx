@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import { Header } from '../components/header'
+import { HomeHeader } from '../components/header'
 import { Footer } from '../components/footer'
 
 
@@ -13,11 +13,13 @@ const Home = () => {
         <title>UU-PlatHome | 宇大生必須のプラットフォーム</title>
       </Head>
 
-      <Header />
+      <HomeHeader />
 
       <main>
-        <div className='mainvisual bg-main-bg pt-20 mb-10' style={{ height: 780 }}>
-          {/*<Image src='/children.svg' width='300' height='300' alt='' />*/}
+        <div className='mainvisual bg-main-bg pt-20 mb-10 text-center' style={{ height: 780 }}>
+          <Image src='/children.svg' width='300' height='300' alt='' />
+          <Image src='/home.svg' width='600' height='500' alt='' />
+          <Image src='/bg.svg' width='800' height='128' alt='' />
           mainvisual
         </div>
 
@@ -63,16 +65,16 @@ const Home = () => {
                     <p className='text-sm leading-7 pl-8 mb-4'>各サークルオリジナルの『ビラ』一覧 や
                       毎日更新される『今日の新歓』、サークルが新歓の追加や情報を更新できる『サークル管理ページ』などの機能があります。</p>
                   </div>
-                  <div className='my-auto hover-circles'>
-                    <a href='https://uu-circles.com/' target='_blank' rel='noopener' >
+                  <div className='relative my-auto'>
+                    <a href='https://uu-circles.com/' target='_blank' rel='noopener' className='hover-circles' >
                       <Image src='/uucircles_thumbnail.png' width='300' height='156.27' />
                     </a>
                   </div>
                 </div>
 
                 <div className='flex container justify-between'>
-                  <div className='my-auto block hover-yell'>
-                    <a href='https://media.uu-circles.com/' target='_blank' rel='noopener'  >
+                  <div className='relative my-auto'>
+                    <a href='https://media.uu-circles.com/' target='_blank' rel='noopener' className='hover-yell' >
                       <Image src='/uuyell_thumbnail.png' width='300' height='156.27' />
                     </a>
                   </div>

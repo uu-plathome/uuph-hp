@@ -18,16 +18,18 @@ export function Footer() {
             <FontAwesomeIcon icon={faTwitter} />
           </a>
         </div>
-        <a className='h-fit' href='https://uu-circles.com' target='_blank' rel='noopener'>
-          <Image src='/UU-Circles.svg' width='110' height='22.92' alt='UU-Circles' />
-        </a>
-        <div className='flex flex-col justify-between'>
-          <a className='block' href='https://media.uu-circles.com' target='_blank' rel='noopener'>
-            <Image src='/uu-yell.svg' width='76.48' height='22.92' alt='uu-yell' />
+        <div className='flex gap-10'>
+          <a className='h-fit' href='https://uu-circles.com' target='_blank' rel='noopener'>
+            <Image src='/UU-Circles.svg' width='110' height='22.92' alt='UU-Circles' />
           </a>
-          <a className='block mx-auto' href='https://twitter.com/uu_yell' target='_blank' rel='noopener'>
-            <FontAwesomeIcon icon={faTwitter} />
-          </a>
+          <div className='flex flex-col justify-between'>
+            <a className='block' href='https://media.uu-circles.com' target='_blank' rel='noopener'>
+              <Image src='/uu-yell.svg' width='76.48' height='22.92' alt='uu-yell' />
+            </a>
+            <a className='block mx-auto' href='https://twitter.com/uu_yell' target='_blank' rel='noopener'>
+              <FontAwesomeIcon icon={faTwitter} />
+            </a>
+          </div>
         </div>
       </div>
       <p className='text-center text-sm'>&copy; 2022 UU-PlatHome</p>

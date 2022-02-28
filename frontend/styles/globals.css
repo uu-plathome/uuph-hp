@@ -510,7 +510,7 @@ header nav a {
 
   .contact-i iframe {
     width: 400px;
-    height: 1900px;
+    height: 1700px;
   }
 }
 
@@ -539,6 +539,6 @@ header nav a {
 
   .contact-i iframe {
     width: calc(100vw - 20px);
-    height: 2000px;
+    height: 1900px;
   }
 }

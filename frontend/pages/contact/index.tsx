@@ -18,7 +18,7 @@ export default function Home() {
       <main className='text-center pt-32'>
         <h2 className='mb-16'>CONTACT<br /><span>お問い合わせ</span></h2>
         <div className='w-fit mx-auto mb-28 contact-i'>
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScUDn6XHyVHkfQG481VrfcsYPpy_TfYa7CwExBpMEV0T0moTA/viewform?embedded=true" width="640" height="1720" >読み込んでいます…</iframe>
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScwmb9711rpENdPhCvFlH2KZU7i7Tg-recV7PrfeL4ObOLebw/viewform?embedded=true" width="640" height="1600" >読み込んでいます…</iframe>
         </div>
       </main>
 

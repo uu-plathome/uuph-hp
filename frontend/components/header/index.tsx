@@ -6,7 +6,7 @@ import React from "react";
 export function HomeHeader() {
   return (
     <header className=" pt-5 fixed z-50 mplus-regular" style={{ height: 80, width: '100vw' }}>
-      <div className="flex wrapper justify-between items-center" style={{ height: 60 }}>
+      <div className="flex wrapper justify-between items-center header" style={{ height: 60 }}>
         <h1>
           <a href='https://uu-plathome.com'>
             <Image src='/Logo_black.svg' width='220' height='39' alt='UU-PlatHome' />

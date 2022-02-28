@@ -10,6 +10,9 @@ const Home = () => {
     <>
       <Head>
         <title>UU-PlatHome | 宇大生必須のプラットフォーム</title>
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="UU-PlatHome | 宇大生必須のプラットフォーム" />
+
       </Head>
 
       <HomeHeader />
@@ -34,8 +37,8 @@ const Home = () => {
 
         <section id="about">
           <div className='inner-content relative' style={{ height: 510 }}>
-            <div className='w-screen bg-main-b4 sec-shadow absolute' style={{ zIndex: 0, height: 510 }}>
-              <div className="about" style={{ height: 510 }}>
+            <div className='w-screen bg-main-b4 sec-shadow absolute' style={{ zIndex: 0 }}>
+              <div className="about" >
                 <h2 className='mb-60'>
                   ABOUT<br /><span>“UU-PlatHome”とは？</span>
                 </h2>
@@ -50,7 +53,7 @@ const Home = () => {
             <div className='sub_boy01'>
               <Image src='/sub_boy_01.svg' width='160.5' height='250' alt='' />
             </div>
-            <div className='flex gap-5 absolute top-1/2 right-0' style={{ transform: 'translateY(-50%)' }}>
+            <div className='flex gap-5 absolute top-1/2 right-0 sp'>
               <Image src='/UUCircles_iPhone.png' width='160' height='308.55' alt='UU-Circles' />
               <Image src='/uuyell_iPhone.png' width='160' height='308.55' alt='uu-yell' />
             </div>

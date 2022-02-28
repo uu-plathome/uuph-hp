@@ -203,3 +203,19 @@
 header nav a {
   cursor: pointer;
 }
+
+.sub_girl01 {
+  position: absolute;
+  top: 40px;
+  left: 460px;
+}
+
+.sub_boy01 {
+  position: absolute;
+  top: 90px;
+  left: 290px;
+}
+
+.sec-shadow {
+  box-shadow: -4px 4px 8px #94dbff;
+}

@@ -34,21 +34,21 @@ const Home = () => {
 
         <section id="about">
           <div className='inner-content relative' style={{ height: 510 }}>
-            <div className='w-screen bg-main-b4 absolute' style={{ zIndex: 0, height: 510 }}>
+            <div className='w-screen bg-main-b4 sec-shadow absolute' style={{ zIndex: 0, height: 510 }}>
               <div className="" style={{ maxWidth: 800, marginLeft: 100, height: 510 }}>
                 <h2 className='mb-60'>
                   ABOUT<br /><span>“UU-PlatHome”とは？</span>
                 </h2>
-                <p className='leading-8'>UU-PlatHomeは、<br /><span className='line mplus-medium'>宇都宮大学生必須のWebサービス
-                  “UU-Circles”</span><br /><span className='line mplus-medium'>メディアサイト “uu-yell”</span><br />を運営するメディア団体です。
+                <p className='leading-8'>UU-PlatHomeは、<br /><span className='mplus-medium border-b-2 border-main-b1'> 宇都宮大学生必須のWebサービス
+                  “UU-Circles”<br /> メディアサイト “uu-yell”</span><br />を運営するメディア団体です。
                 </p>
               </div>
             </div>
-            <div className='absolute top-16 left-96' style={{}}>
-              <Image src='/sub_girl_01.svg' width='250' height='250' alt='' />
+            <div className='sub_girl01'>
+              <Image src='/sub_girl_01.svg' width='150' height='220' alt='' />
             </div>
-            <div className='absolute top-28 left-64' style={{}}>
-              <Image src='/sub_boy_01.svg' width='250' height='250' alt='' />
+            <div className='sub_boy01'>
+              <Image src='/sub_boy_01.svg' width='160.5' height='250' alt='' />
             </div>
             <div className='flex gap-5 absolute top-1/2 right-0' style={{ transform: 'translateY(-50%)' }}>
               <Image src='/UUCircles_iPhone.png' width='160' height='308.55' alt='UU-Circles' />
@@ -59,7 +59,7 @@ const Home = () => {
 
         <section id="service">
           <div className='inner-content relative' style={{ height: 800 }}>
-            <div className='w-screen bg-main-b4 absolute right-0' style={{ zIndex: 0, height: 800 }}>
+            <div className='w-screen bg-main-b4 sec-shadow absolute right-0' style={{ zIndex: 0, height: 800 }}>
               <div className="absolute right-0" style={{ width: 800, marginRight: 100, height: 800 }}>
                 <h2 className='mb-16 text-right'>
                   SERVICE<br /><span>運営サービス</span>
@@ -115,11 +115,11 @@ const Home = () => {
                 <p>U-lab HP</p>
               </a>
             </div>
-            <div className='absolute top-28'>
-              <Image src='/sub_boy_02.svg' width='200' height='200' alt='' />
+            <div className='absolute top-28 left-4'>
+              <Image src='/sub_boy_02.svg' width='200' height='172' alt='' />
             </div>
-            <div className='absolute top-20 right-0'>
-              <Image src='/sub_girl_02.svg' width='250' height='250' alt='' />
+            <div className='absolute top-20 right-4'>
+              <Image src='/sub_girl_02.svg' width='200' height='135' alt='' />
             </div>
           </div>
         </section>

@@ -18,10 +18,10 @@ export default class MyDocument extends Document {
         <Head prefix="og: http://ogp.me/ns#">
 
           {/*OGP*/}
-          <meta property="og:url" content="https:uu-plathome.com" />
+          <meta property="og:url" content="https://uu-plathome.com" />
           <meta property="og:description" content='"宇大生必須のプラットフォーム"を掲げ、”UU-Circles”と”uu-yell”を運営するメディア団体、"UU-PlatHome"の公式Webサイトです。' />
           <meta property="og:site_name" content="UU-PlatHome" />
-          <meta property="og:image" content="https:uu-plathome.com/uuph.png" />
+          <meta property="og:image" content="https://uu-plathome.com/uuph.png" />
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:site" content="@UU_PlatHome" />
 

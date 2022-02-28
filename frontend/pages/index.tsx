@@ -42,7 +42,7 @@ const Home = () => {
                 <h2 className='mb-60'>
                   ABOUT<br /><span>“UU-PlatHome”とは？</span>
                 </h2>
-                <p className='leading-8 mb-4'>UU-PlatHomeは、<br /><span className='mplus-medium border-b-2 border-main-b1'> 宇都宮大学生必須のWebサービス <br className='hidden' />“UU-Circles”<br /> メディアサイト “uu-yell”</span><br />を運営するメディア団体です。
+                <p className='leading-8'>UU-PlatHomeは、<br /><span className='mplus-medium border-b-2 border-main-b1'> 宇都宮大学生必須のWebサービス <br className='hidden' />“UU-Circles”<br /> メディアサイト “uu-yell”</span><br />を運営するメディア団体です。
                 </p>
               </div>
             </div>

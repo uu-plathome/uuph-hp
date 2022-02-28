@@ -35,7 +35,7 @@ const Home = () => {
           </div>
         </div>
 
-        <section id="about">
+        <section id="about" className='overflow-hidden pb-8'>
           <div className='inner-content relative' >
             <div className='w-screen bg-main-b4 sec-shadow absolute' style={{ zIndex: 0 }}>
               <div className="about" >

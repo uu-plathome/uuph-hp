@@ -11,6 +11,8 @@ export default function Home() {
     <>
       <Head>
         <title>Contact | UU-PlatHome</title>
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Contact | UU-PlatHome" />
       </Head>
 
       <Header />

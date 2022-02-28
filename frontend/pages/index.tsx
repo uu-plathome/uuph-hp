@@ -36,14 +36,13 @@ const Home = () => {
         </div>
 
         <section id="about">
-          <div className='inner-content relative' style={{ height: 510 }}>
+          <div className='inner-content relative' >
             <div className='w-screen bg-main-b4 sec-shadow absolute' style={{ zIndex: 0 }}>
               <div className="about" >
                 <h2 className='mb-60'>
                   ABOUT<br /><span>“UU-PlatHome”とは？</span>
                 </h2>
-                <p className='leading-8'>UU-PlatHomeは、<br /><span className='mplus-medium border-b-2 border-main-b1'> 宇都宮大学生必須のWebサービス
-                  “UU-Circles”<br /> メディアサイト “uu-yell”</span><br />を運営するメディア団体です。
+                <p className='leading-8'>UU-PlatHomeは、<br /><span className='mplus-medium border-b-2 border-main-b1'> 宇都宮大学生必須のWebサービス <br className='hidden' />“UU-Circles”<br /> メディアサイト “uu-yell”</span><br />を運営するメディア団体です。
                 </p>
               </div>
             </div>
@@ -61,15 +60,15 @@ const Home = () => {
         </section>
 
         <section id="service">
-          <div className='inner-content relative' style={{ height: 800 }}>
-            <div className='w-screen bg-main-b4 sec-shadow absolute right-0' style={{ zIndex: 0, height: 800 }}>
-              <div className="absolute right-0 service" style={{ height: 800 }}>
+          <div className='inner-content relative'>
+            <div className='w-screen bg-main-b4 sec-shadow absolute right-0' style={{ zIndex: 0 }}>
+              <div className="absolute right-0 service">
                 <h2 className='mb-16 text-right'>
                   SERVICE<br /><span>運営サービス</span>
                 </h2>
 
                 <div className='flex container justify-between mb-20'>
-                  <div className='' style={{ width: 460 }}>
+                  <div className='service-item' >
                     <h3 className='mb-3 px-3 pt-2 pb-1 border-2 border-uucircles leading-none inline-block'>
                       <Image src='/UU-Circles.svg' width='110' height='22.92' alt='UU-Circles' />
                     </h3>
@@ -90,7 +89,7 @@ const Home = () => {
                       <Image src='/uuyell_thumbnail.png' width='300' height='156.27' />
                     </a>
                   </div>
-                  <div className='' style={{ width: 460 }}>
+                  <div className='service-item' >
                     <h3 className='mb-3 px-3 pt-2 pb-1 border-2 border-uuyell leading-none inline-block'>
                       <Image src='/uu-yell.svg' width='76.48' height='22.92' alt='uu-yell' />
                     </h3>
@@ -112,7 +111,7 @@ const Home = () => {
         <section id='u-lab'>
           <div className='relative text-center py-10 inner-content rounded-3xl border-4 border-ulab'>
             <h2 className='mplus-medium text-lg text-fb mt-0 mb-7'>サイト制作について</h2>
-            <p className='mb-8'>UU-Circles・uu-yellの開発は 学生団体U-lab が行いました！</p>
+            <p className='mb-8'>UU-Circles・uu-yellの開発は <br className='hidden b5' />学生団体U-lab が行いました！</p>
             <div className='w-fit text-center m-auto'>
               <a href='https://ulab-uu.com' target='_blank' rel='noopener' className='block mb-2 hover:opacity-70'>
                 <Image src='/U-lab_uu.jpg' width='250' height='145' alt='U-lab' />

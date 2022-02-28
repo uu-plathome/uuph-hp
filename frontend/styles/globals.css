@@ -251,7 +251,35 @@ header nav a {
   margin-right: 100px;
 }
 
-@media screen and (max-width: 1200px) {
+.sp {
+  transform: translateY(-50%);
+}
+
+@media screen and (max-width: 1280px) {
+  .wrapper {
+    max-width: 1000px;
+  }
+
+  .inner-wrap {
+    max-width: 800px;
+  }
+
+  .inner-content {
+    max-width: 900px;
+  }
+
+  .about {
+    width: 800px;
+    margin-left: 50px;
+  }
+
+  .service {
+    width: 800px;
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
   .wrapper {
     max-width: 800px;
   }
@@ -265,12 +293,115 @@ header nav a {
   }
 
   .about {
-    width: 600px;
+    width: 700px;
     margin-left: 50px;
   }
 
   .service {
-    width: 600px;
+    width: 700px;
     margin-right: 50px;
+  }
+}
+
+/*タブレット対応保留、スマホ対応へ。*/
+
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 0.875rem;
+  }
+
+  .wrapper {
+    max-width: calc(100% - 10px);
+  }
+
+  .inner-wrap {
+    max-width: calc(100% - 30px);
+  }
+
+  .inner-content {
+    max-width: calc(100% - 20px);
+  }
+
+  .about {
+    width: 90%;
+    margin-left: 20px;
+  }
+
+  .service {
+    width: 90%;
+    margin-right: 20px;
+  }
+
+  .mv-base {
+    padding-top: 200px;
+    padding-bottom: 40px;
+  }
+
+  .fv-children {
+    width: 140px;
+    bottom: 88px;
+    left: 8%;
+  }
+
+  .fv-home {
+    width: 200px;
+    bottom: 60px;
+    right: 4%;
+  }
+
+  .fv-content p {
+    font-size: 1rem;
+    bottom: 50px;
+    left: 5%;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  h1 {
+    margin-bottom: 12px;
+    width: 140px;
+  }
+
+  h2 {
+    @apply mplus-heavy mt-8 text-3xl tracking-widest text-ora;
+  }
+
+  h2 span {
+    @apply mplus-medium mt-0 block text-xs tracking-widest;
+  }
+
+  .link-ul::after {
+    bottom: -4px;
+  }
+
+  .about h2 {
+    margin-bottom: 300px;
+  }
+
+  .sp {
+    width: 250px;
+    top: 120px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .fv-home {
+    width: 180px;
+  }
+
+  .fv-children {
+    width: 100px;
+    bottom: 100px;
+    left: 12%;
+  }
+
+  .fv-content p {
+    font-size: 1rem;
+    bottom: 65px;
+    left: 5%;
   }
 }

@@ -247,7 +247,7 @@ header nav a {
 
 #service > div,
 #service > div > div {
-  height: 800px;
+  height: 1200px;
 }
 
 .about {
@@ -434,7 +434,7 @@ header nav a {
 
   #service > div,
   #service > div > div {
-    height: 1040px;
+    height: 1300px;
   }
 
   #service h2 {
@@ -514,6 +514,28 @@ header nav a {
   }
 }
 
+.sp {
+  display: none;
+}
+
+@media screen and (max-width: 450px) {
+  #service > div,
+  #service > div > div {
+    height: 1350px;
+  }
+  .sp-text-left {
+    margin: auto;
+    width: fit-content;
+    text-align: left;
+  }
+  .sp {
+    display: block;
+  }
+  .sp-none {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 400px) {
   .fv-home {
     width: 180px;
@@ -534,7 +556,7 @@ header nav a {
 
   #service > div,
   #service > div > div {
-    height: 1080px;
+    height: 1450px;
   }
 
   .contact-i iframe {

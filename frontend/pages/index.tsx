@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 import { HomeHeader } from '../components/header'
 import { Footer } from '../components/footer'
@@ -83,7 +84,7 @@ const Home = () => {
                   </div>
                 </div>
 
-                <div className='flex container justify-between'>
+                <div className='flex container justify-between mb-10'>
                   <div className='relative my-auto'>
                     <a href='https://media.uu-circles.com/' target='_blank' rel='noopener' className='hover-yell' >
                       <Image src='/uuyell_thumbnail.png' width='300' height='156.27' />
@@ -97,6 +98,15 @@ const Home = () => {
                     <p className='text-sm leading-7 pl-8 mb-4'>
                       uu-mailのとなりにブックマークしてもらえるくらい必須ツールにしたいという目標から「uu-mailのとなりに、uu-yell。」をキャッチコピーとして掲げています。</p>
                   </div>
+                </div>
+                <div className='text-center'>
+                  <Link href='https://gakusai.uu-plathome.com'>
+                    <a className='duration-100 hover:opacity-80'>
+                      <h3 className='mb-1'>峰ヶ丘祭2022公式サイト公開中！</h3>
+                      <Image src='/thumbnail.png' width='600' height='315' />
+                      <p className='text-sm sp-text-left'>学園祭運営：大学祭実行委員会<span className='sp-none'> / </span><br className="sp" />HP制作：UU-PlatHome</p>
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>

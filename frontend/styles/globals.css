@@ -514,7 +514,7 @@ header nav a {
   }
 }
 
-.sp {
+#service .sp {
   display: none;
 }
 
@@ -528,7 +528,7 @@ header nav a {
     width: fit-content;
     text-align: left;
   }
-  .sp {
+  #service .sp {
     display: block;
   }
   .sp-none {

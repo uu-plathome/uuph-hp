@@ -5,7 +5,6 @@ import React from 'react'
 import { HomeHeader } from '../components/header'
 import { Footer } from '../components/footer'
 
-
 const Home = () => {
   return (
     <>
@@ -118,7 +117,7 @@ const Home = () => {
           <Image src='/sub_book.svg' width='200' height='172' alt='' />
         </section>*/}
 
-        <section id='u-lab'>
+        <section id='u-lab' className='mb-12'>
           <div className='relative text-center py-10 inner-content rounded-3xl border-4 border-ulab'>
             <h2 className='mplus-medium text-lg text-fb mt-0 mb-7'>制作について</h2>
             <p className='mb-8'>UU-Circles・uu-yellの開発は <br className='hidden b5' />学生団体U-lab が行いました！</p>
@@ -136,6 +135,21 @@ const Home = () => {
             </div>
           </div>
         </section>
+
+        <div className="form text-center mb-24">
+          <div className='inner-content'>
+            <h2 className='mplus-medium text-lg text-fb mt-0 mb-6'>UU-PlatHomeの活動に<br className='hidden b5' />参加したい方へ</h2>
+            <p className='mb-1'>以下のリンクを開き、<br className='hidden b5' />空いている時間を選択してください。</p>
+            <p className='mb-6'>活動内容についてご紹介します！</p>
+
+            <Link href={'https://timerex.net/s/tetsu.work.it_36f8/a185cd43'}>
+              <a className='inline-block bg-ora text-center text-white py-4 px-16 rounded-2xl text-xl font-bold hover:opacity-80'>
+                <p>活動に参加！</p>
+              </a>
+            </Link>
+
+          </div>
+        </div>
       </main>
 
       <Footer />

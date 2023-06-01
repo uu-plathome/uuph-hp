@@ -16,9 +16,6 @@ export function HomeHeader() {
           <Scroll smooth={true} offset={-90} to='about' className='link-ul'>ABOUT</Scroll>
           <Scroll smooth={true} offset={-90} to='service' className='link-ul'>SERVICE</Scroll>
           {/*<Scroll smooth={true} offset={-90} to='news' className='link-ul'>NEWS</Scroll>*/}
-          <Link href='/contact'>
-            <a className='link-ul'>CONTACT</a>
-          </Link>
         </nav>
       </div>
     </header>

@@ -138,13 +138,13 @@ const Home = () => {
 
         <div className="form text-center mb-24">
           <div className='inner-content'>
-            <h2 className='mplus-medium text-lg text-fb mt-0 mb-6'>UU-PlatHomeの活動に<br className='hidden b5' />参加したい方へ</h2>
-            <p className='mb-1'>以下のリンクを開き、<br className='hidden b5' />空いている時間を選択してください。</p>
-            <p className='mb-6'>活動内容についてご紹介します！</p>
+            {/* <h2 className='mplus-medium text-lg text-fb mt-0 mb-6'>UU-PlatHomeの活動に<br className='hidden b5' />参加したい方へ</h2> */}
+            <p className='mb-1'>UU-PlatHomeの活動に<br className='hidden b5' />参加したい方やサークル管理者の方は</p>
+            <p className='mb-6'>以下のLINE公式アカウントよりご連絡ください！</p>
 
-            <Link href={'https://timerex.net/s/tetsu.work.it_36f8/a185cd43'}>
+            <Link href={'https://lin.ee/qawXPNL'}>
               <a className='inline-block bg-ora text-center text-white py-4 px-16 rounded-2xl text-xl font-bold hover:opacity-80'>
-                <p>活動に参加！</p>
+                <p>お問い合わせ</p>
               </a>
             </Link>
 

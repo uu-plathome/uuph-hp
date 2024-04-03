@@ -6,6 +6,7 @@ import { Header } from '../../components/header'
 import { Footer } from '../../components/footer'
 
 
+// Attention: 現在リンクされてないページ
 export default function Home() {
   return (
     <>
